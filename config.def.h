@@ -12,14 +12,15 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+static const char col_dviolet[]     = "#27004f";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeNorm] = { col_gray3, col_gray1, col_dviolet },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
 /* tagging */
-static const char *tags[] = { "|www|", ">__", ">_<", "<_>", "0-0", "0+0", "+_+", "*_*" };
+static const char *tags[] = { "|www|", ">_", "_$", "<_>", "0-0", "0+0", "+_+", "*_*" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -63,7 +64,12 @@ static const char *termcmd[]  = { "alacritty", NULL };
 /* my shortcuts */
 
 static const char *nwgdrawer[] = { "nwg-drawer" };
-static const char *sysmonitor[] = { "exec htop" };
+static const char *sysmonitor[] = { "exec bashtop" };
+static const char *pavu[] = { "pavucontrol" };
+
+/* my custom multiple bash script + /bin/ files*/
+
+static const char *catboii[] = { "catboii" };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -71,6 +77,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = nwgdrawer } },
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = sysmonitor } },
+	{ MODKEY,                       XK_x,      spawn,          {.v = pavu } },
+	{ MODKEY|ShiftMask,             XK_x,      spwan,          {.v = catboii } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
