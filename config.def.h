@@ -66,6 +66,7 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *nwgdrawer[] = { "nwg-drawer" };
 static const char *sysmonitor[] = { "exec bashtop" };
 static const char *pavu[] = { "pavucontrol" };
+static const char *ss[] = { "flameshot gui" };
 
 /* my custom multiple bash script + /bin/ files*/
 
@@ -78,7 +79,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          {.v = nwgdrawer } },
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = sysmonitor } },
 	{ MODKEY,                       XK_x,      spawn,          {.v = pavu } },
-	{ MODKEY|ShiftMask,             XK_x,      spwan,          {.v = catboii } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = ss } },
+	{ MODKEY|ShiftMask,             XK_x,      spawn,          {.v = catboii } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
