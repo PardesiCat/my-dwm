@@ -13,10 +13,11 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_dviolet[]     = "#27004f";
+static const char col_dorange[]     = "#FF8C00";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_dviolet },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_dorange  },
 };
 
 /* tagging */
@@ -64,9 +65,9 @@ static const char *termcmd[]  = { "alacritty", NULL };
 /* my shortcuts */
 
 static const char *nwgdrawer[] = { "nwg-drawer" };
-static const char *sysmonitor[] = { "exec bashtop" };
-static const char *pavu[] = { "pavucontrol" };
-static const char *ss[] = { "flameshot gui" };
+static const char *sysmonitor[] = { "bashtop", NULL};
+static const char *pavu[] = { "pavucontrol"};
+static const char *ss[] = { "scrot -s", NULL};
 
 /* my custom multiple bash script + /bin/ files*/
 
