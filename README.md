@@ -7,8 +7,9 @@
 
 ## shortcuts added
 
- pavucontrol flameshot nwg-drawer , catboii ( personal script inside /bin/bash for multiple custom scripts)
+ pavucontrol flameshot polo file manager , catboii ( personal script inside /bin/bash for multiple custom scripts)
 
-## some of my Requirements
- sudo pacman --needed -S xorg-server xorg-xinit xorg-xrandr xcompmgr alacritty dmenu alsa-lib alsa-util feh ibus neovim nano
+## some of my Requirements and configs
+ 
+ now my dwm configs or requirements can be found in [this-repo](https://github.com/PardesiCat/my-dwm-confs)
 
