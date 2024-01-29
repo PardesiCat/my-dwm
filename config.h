@@ -64,7 +64,7 @@ static const char *termcmd[]  = { "alacritty", NULL };
 
 /* my shortcuts */
 
-static const char *nwgdrawer[] = { "polo-gtk" };
+static const char *nwgdrawer[] = { "nwg-drawer" };
 static const char *sysmonitor[] = { "alacritty" , "-e" , "bashtop" , NULL};
 static const char *pavu[] = { "pavucontrol"};
 static const char *ss[] = { "flameshot" , "gui", NULL};
@@ -77,7 +77,7 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_q,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_e,      spawn,          {.v = filemanager } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = nwgdrawer } },
 	{ MODKEY|ShiftMask,             XK_e,      spawn,          {.v = sysmonitor } },
 	{ MODKEY,                       XK_x,      spawn,          {.v = pavu } },
 	{ MODKEY,                       XK_s,      spawn,          {.v = ss } },
